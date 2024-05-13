@@ -7,7 +7,7 @@ function sumOfArray (arr) {
         sum += arr[i];
     }
 
-    console.log(sum);
+    //console.log(sum);
 
 }
 
@@ -24,7 +24,30 @@ function avgOfArray (arr) {
 
     let avg = sum / num;
 
-    console.log(avg);
+    //console.log(avg);
 }
 
 avgOfArray([1,2,3,4]);
+
+//Take an array of strings and return the longest string.
+
+function longestString (arr) {
+     let longest = arr[0].length;
+     console.log(longest);
+     let ans = arr[0];
+     console.log(arr.length);
+
+    for(let i = 0 ; i <= arr.length; i++){
+
+        console.log(i);
+        
+        console.log("loop",arr[i]);
+        
+
+    }
+
+    //console.log(longest);
+
+}
+
+longestString("me","you","hello");
