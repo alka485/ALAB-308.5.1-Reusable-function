@@ -85,7 +85,15 @@ function testData(arr){
     const newArr = arr.filter((arr1) => arr1.age <= 50);
     console.log(newArr);
 
-    
+    //Map the array to change the “occupation” key to “job” and increment every age by 1.
+    const modifiedArr = arr.map((arr2 => ({
+        job:arr2.occupation,
+        age: (arr2.age) + 1
+    })));
+
+    console.log(modifiedArr);
+
+
 
 }
 
