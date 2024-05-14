@@ -72,3 +72,22 @@ function recursion(n){
 }
 
 recursion(5);
+
+//Part 2 Thinking Methodically
+
+function testData(arr){
+    //Sort the array by age
+    arr.sort((a, b) => a.age - b.age)
+
+    console.log(arr);
+    //Filter the array to remove entries with an age greater than 50.
+    arr.filter(arr => arr.age <= 50);
+    console.log(arr);
+
+}
+
+testData([{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+{ id: "48", name: "Barry", occupation: "Runner", age: "25" },
+{ id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+{ id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+{ id: "7", name: "Bilbo", occupation: "None", age: "111" }]);
