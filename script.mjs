@@ -80,9 +80,12 @@ function testData(arr){
     arr.sort((a, b) => a.age - b.age)
 
     console.log(arr);
+
     //Filter the array to remove entries with an age greater than 50.
-    arr.filter(arr => arr.age <= 50);
-    console.log(arr);
+    const newArr = arr.filter((arr1) => arr1.age <= 50);
+    console.log(newArr);
+
+    
 
 }
 
