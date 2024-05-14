@@ -45,3 +45,30 @@ function longestString (arr) {
 }
 
 longestString(["me","you","hello"]);
+
+//Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
+
+function stringsLongerThan(arr,num){
+    let newArr =[];
+    for(let i = 0 ; i <arr.length; i++){
+        if(arr[i].length > num) {
+            newArr.push(arr[i]);
+        }
+    }
+
+    console.log(newArr);
+
+}
+
+stringsLongerThan(['say','hello','in','the','morning'],3);
+
+//Take a number, n, and print every number between 1 and n without using loops. Use recursion.
+
+function recursion(n){
+    if(n>=1){
+        console.log(n);
+        recursion(n-1);
+    }
+}
+
+recursion(5);
