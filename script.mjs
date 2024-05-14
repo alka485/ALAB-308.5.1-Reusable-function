@@ -75,7 +75,7 @@ recursion(5);
 
 //Part 2 Thinking Methodically
 
-function testData(arr){
+function Data(arr){
     //Sort the array by age
     arr.sort((a, b) => a.age - b.age)
 
@@ -93,11 +93,22 @@ function testData(arr){
 
     console.log(modifiedArr);
 
+   // Use the reduce method to calculate the sum of the ages.
+       //Then use the result to calculate the average age.
+   
+    const sum = arr.reduce((sum , arr3) => sum + parseInt((arr3.age)), 0);
+    console.log(sum); 
+    //average age
+
+    const avg = sum /arr.length;
+
+    console.log("Average" , avg);
+
 
 
 }
 
-testData([{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+Data([{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
 { id: "48", name: "Barry", occupation: "Runner", age: "25" },
 { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
 { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
