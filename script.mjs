@@ -32,22 +32,16 @@ avgOfArray([1,2,3,4]);
 //Take an array of strings and return the longest string.
 
 function longestString (arr) {
-     let longest = arr[0].length;
-     console.log(longest);
-     let ans = arr[0];
-     console.log(arr.length);
-
-    for(let i = 0 ; i <= arr.length; i++){
-
-        console.log(i);
-        
-        console.log("loop",arr[i]);
-        
-
+     let longest;
+     let lgth = 0
+    for(let i = 0 ; i < arr.length; i++){       
+        if(arr[i].length > lgth){
+            lgth = arr[i].length;
+            longest = arr[i]
+        }
     }
 
-    //console.log(longest);
-
+    console.log(longest);
 }
 
-longestString("me","you","hello");
+longestString(["me","you","hello"]);
