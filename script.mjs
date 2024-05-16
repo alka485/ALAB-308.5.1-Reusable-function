@@ -88,7 +88,7 @@ function Data(arr){
     //Map the array to change the “occupation” key to “job” and increment every age by 1.
     const modifiedArr = arr.map((arr2 => ({
         job:arr2.occupation,
-        age: (arr2.age) + 1
+        age: parseInt(arr2.age) + 1
     })));
 
     console.log(modifiedArr);
